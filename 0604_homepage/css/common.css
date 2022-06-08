@@ -1,0 +1,145 @@
+@charset "uft-8";
+/* 문서에 최상단에 위치하게 할것 */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* 패딩이나 마진을 키우더라도 박스크기가 커지는 걸 막을 수 있다 */
+}
+
+body
+{
+    color: #333;
+}
+
+a
+{
+    text-decoration: none;
+    color: #333;
+}
+
+table
+{
+    border-collapse: collapse;
+}
+
+/* CSS reset */
+
+nav ul
+{
+    list-style-type: none;
+}
+
+.cen
+{
+    width: 1000px;
+    margin: auto;  
+}
+
+header
+{
+    height: 80px;
+    background-color: white;
+    box-shadow: 0 2px 7px rgba(0,0,0,0.3);
+}
+
+h1
+{
+    float: left;
+    margin-top: 16px;
+    margin-right: 30px;
+}
+
+#lnb
+{
+    float: left;
+}
+
+.main
+{
+    float: left;
+}
+
+.main:hover .sub
+{
+    display: block;
+}
+
+.main>a
+{
+    font-weight: bold;
+    font-size: 1.1em;
+    display: block;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    padding: 0 20px;
+}
+
+.main>a:hover
+{
+  color: blueviolet;
+}
+
+.sub
+{
+    display: none;
+    background-color: #555;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+}
+
+.sub li
+{
+    display: inline;
+}
+
+.sub a
+{
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    padding: 1em 1em;
+}
+
+.sub a:hover
+{
+    color: #E08CFF;
+}
+
+#gnb
+{
+    float: right;
+    margin-top: 30px;
+}
+
+#gnb a
+{
+    color: #666;
+    font-size: 0.8em;
+    padding-left: 0.6em;
+    padding-right: 0.4em;
+    position: relative;
+}
+
+#gnb a::after
+{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 0.9em;
+    background-color: #666;
+    margin-right: -0.4em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+
+#gnb a:last-of-type::after
+{
+    content: none;
+}
