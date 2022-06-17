@@ -42,6 +42,7 @@ header
     height: 80px;
     background-color: white;
     box-shadow: 0 2px 7px rgba(0,0,0,0.3);
+    z-index: 10000;
 }
 
 h1
@@ -90,6 +91,7 @@ h1
     width: 100%;
     left: 0;
     text-align: center;
+    z-index: 10000;
 }
 
 .sub li
@@ -142,4 +144,86 @@ h1
 #gnb a:last-of-type::after
 {
     content: none;
+}
+
+.jaju{
+    color: #E02CFF;
+}
+
+footer{
+    margin-top: 40px;
+    background-color: #f7f7f7;
+    border-top: 1px solid #eee;
+    overflow: auto;
+    padding-top: 30px;
+    padding-bottom: 65px;
+}
+
+#footerTxt{
+    float: left;
+    font-size: 0.9em;
+    color: #777;
+}
+
+#footerLink{
+    margin-bottom: 28px;
+    font-size: 0.9em;
+}
+
+#footerLogo{
+    float: right;
+}
+
+#mvBar
+{
+    position: absolute;
+    background-color: rgba(0,0,0,0.1);
+    bottom: 0;
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+#mvBar>div{
+    width: 500px;
+    margin: auto;
+}
+
+#mvBar a
+{
+    display: block;
+    width: 250px;
+    height: 50px;
+    background-color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #696969;
+    float: left;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+#mvBar a:first-of-type{
+    border-right: 1px solid #AAA;
+    border-radius: 4px 0 0 4px;
+}
+
+#mvBar a:last-of-type{
+    border-radius: 0 4px 4px 0;
+}
+
+#prev, #next{
+    position: absolute;
+    width: 60px;
+    height: 40px;
+    bottom: 16px;
+}
+
+#prev{
+    right: 80px;
+}
+
+#next{
+    right: 20px;
 }

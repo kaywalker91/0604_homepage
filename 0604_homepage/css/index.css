@@ -1,0 +1,46 @@
+@charset "uft-8";
+/* 문서에 최상단에 위치하게 할것 */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* 패딩이나 마진을 키우더라도 박스크기가 커지는 걸 막을 수 있다 */
+}
+
+body
+{
+    color: #333;
+}
+
+a
+{
+    text-decoration: none;
+    color: #333;
+}
+
+table
+{
+    border-collapse: collapse;
+}
+
+/* CSS reset */
+
+#mainVisual{
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+}
+
+.slide{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+
+}
+
+.slide:first-of-type{
+    display: block;
+}
