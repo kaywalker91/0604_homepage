@@ -227,3 +227,50 @@ footer{
 #next{
     right: 20px;
 }
+
+#icons{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    overflow: auto;
+}
+
+#icons>a{
+    display: block;
+    float: left;
+    width: 20%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+#products{
+
+}
+
+.product{
+    border: 1px solid #ccc;
+    margin: 7px;
+
+}
+
+.pro_img{
+    width: 100%;
+}
+
+.pro_txt{
+    padding: 20px 30px;
+}
+
+.pro_big{
+    font-size: 1.6em;
+    margin-bottom: 0.5em;
+}
+
+.pro_small{
+    font-size: 0.95em;
+    margin-bottom: 1em;
+}
+
+.pro_txt a{
+    color: rgb(202, 49, 169);
+}
