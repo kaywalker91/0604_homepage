@@ -52,6 +52,33 @@ h1
     margin-right: 30px;
 }
 
+h3
+{
+    font-size: 1.15em;
+    letter-spacing: -0.08em;
+    margin-bottom: 0.8em;
+    
+}
+
+#mainVisual{
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+}
+
+.slide{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+
+}
+
+.slide:first-of-type{
+    display: block;
+}
+
 #lnb
 {
     float: left;
@@ -150,6 +177,10 @@ h1
     color: #E02CFF;
 }
 
+.float-right{
+    float: right;
+}
+
 footer{
     margin-top: 40px;
     background-color: #f7f7f7;
@@ -243,10 +274,6 @@ footer{
     text-align: center;
 }
 
-#products{
-
-}
-
 .product{
     border: 1px solid #ccc;
     margin: 7px;
@@ -273,4 +300,82 @@ footer{
 
 .pro_txt a{
     color: rgb(202, 49, 169);
+}
+
+.slick-arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    width: 60px;
+    height: 60px;
+    background-image: url(../images/btn_arrow.png);
+    background-color: transparent;
+    border: none;
+    font-size: 0;
+}
+
+.slick-prev{
+    left: -50px;
+    transform: rotate(180deg);
+}
+
+.slick-next{right: -50px;}
+
+#board{
+    overflow: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#board>div{
+    float: left;
+    width: calc((100% - 42px) / 3);
+    margin: 7px;
+}
+
+#notice, #sns-cont{
+    font-size: 0.9em;
+}
+ 
+#notice{
+   list-style-type: none;
+}
+
+#notice a{
+    display: block;
+    overflow: auto;
+    line-height: 2em;
+}
+
+.notice_title{
+    float: left;
+    width: calc(100% - 90px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.notice_date{
+    float: left;
+    width: 90px;
+    text-align: right;
+}
+
+.sns-btn img{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.sns-btn .sns-active{
+    opacity: 1;
+}
+
+#sns-cont>div{
+    display: none;
+    line-height: 2em;
+}
+
+#sns-cont>div:first-of-type{
+    display: block;
 }
